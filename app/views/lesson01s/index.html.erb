@@ -7,7 +7,9 @@
 
 <div class="container">
   <div class="row">
-
+      
+      
+<!--リスニング--> 
     <div class="col-sm-7 p-3">
       <h3>Listening!</h3>
 <!--例文1-1-->
@@ -17,26 +19,27 @@
           <%= audio_tag 'Sample1-1.m4a' %>
         </div>
         <h5 class="mt-4">スクリプト</h5>
-    <style>
-      /*　プレイヤー（再生バー）の高さ、幅、背景色の指定　*/
-      .audiojs { height: 22px; background: #404040; width: 280px;}
-      /*　再生・停止ボタンの高さ、幅、パディングの指定　*/
-      .audiojs .play-pause { width: 25px; height: 20px; padding: 0px 8px 0px 0px; }
-      /*　再生・停止ボタンなどの p 要素　*/
-      .audiojs p { width: 25px; height: 20px; margin: -3px 0px 0px -1px; }
-      /*　進行状態・ロードの状態を表示する部分　*/
-      .audiojs .scrubber { background: #5a5a5a; width: 150px; height: 10px; margin: 5px; }
-      /*　進行状態を表示するバーの部分　*/
-      .audiojs .progress { height: 10px; width: 0px; background: #ccc; }
-      /*　ロード状態を表示するバーの部分　*/
-      .audiojs .loaded { height: 10px; background: #000;}
-      /*　再生時間の部分　*/
-      .audiojs .time { float: left; height: 25px; line-height: 25px; }
-      .audiojs .error-message { height: 24px;line-height: 24px; }
-       /*　再生している曲の情報　*/
-      .track-details { clear: both; height: 20px; width: 280px; padding: 1px 6px; background: #eee; color: #222;  font-size: 11px; line-height: 20px;}
-      .track-details:before { content: '♬  Now Playing: '; }
-    </style>
+          <style>
+            /*　プレイヤー（再生バー）の高さ、幅、背景色の指定　*/
+            .audiojs { height: 22px; background: #404040; width: 280px;}
+            /*　再生・停止ボタンの高さ、幅、パディングの指定　*/
+            .audiojs .play-pause { width: 25px; height: 20px; padding: 0px 8px 0px 0px; }
+            /*　再生・停止ボタンなどの p 要素　*/
+            .audiojs p { width: 25px; height: 20px; margin: -3px 0px 0px -1px; }
+            /*　進行状態・ロードの状態を表示する部分　*/
+            .audiojs .scrubber { background: #5a5a5a; width: 150px; height: 10px; margin: 5px; }
+            /*　進行状態を表示するバーの部分　*/
+            .audiojs .progress { height: 10px; width: 0px; background: #ccc; }
+            /*　ロード状態を表示するバーの部分　*/
+            .audiojs .loaded { height: 10px; background: #000;}
+            /*　再生時間の部分　*/
+            .audiojs .time { float: left; height: 25px; line-height: 25px; }
+            .audiojs .error-message { height: 24px;line-height: 24px; }
+             /*　再生している曲の情報　*/
+            .track-details { clear: both; height: 20px; width: 280px; padding: 1px 6px; background: #eee; color: #222;  font-size: 11px; line-height: 20px;}
+            .track-details:before { content: '♬  Now Playing: '; }
+          </style>
+          
           <!-- 表示非表示ボタン -->
           <input type="button" id="button_sample1-1-ch-s" value="表示" class="btn btn-secondary mb-3" />
           <input type="button" id="button_sample1-1-ch-h" value="非表示" class="btn btn-secondary mb-3" />
@@ -334,20 +337,11 @@
       <!-- audiojsの初期化ここまで -->
       
     </div>
-    
+<!--リスニングここまで-->    
 
 
 <!--スピーキング-->
-    <div class="col-sm-5 d-sm-none d-block p-3">
-      <p>PC版では録音、再生機能をお使いいただけます。</p>
-    </div>
-    
-    <aside class="col-sm-5 d-none d-sm-block" style="padding: 10px;">
-      <div style="position: -webkit-sticky; position: sticky; top: 100px;">
-        <%= render 'layouts/recorder' %>
-        <input type="button" value="データリフレッシュ" class="btn btn-secondary mb-3" onclick="window.location.reload();">
-      </div>
-    </aside>
+  <%= render 'layouts/recorder' %>
 <!--スピーキングここまで-->
     
   </div>

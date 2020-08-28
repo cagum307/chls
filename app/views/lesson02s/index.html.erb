@@ -18,16 +18,7 @@
     
 
 <!--スピーキング-->
-    <div class="col-sm-5 d-sm-none d-block p-3">
-      <p>PC版では録音、再生機能をお使いいただけます。</p>
-    </div>
-    
-    <aside class="col-sm-5 d-none d-sm-block" style="padding: 10px;">
-      <div style="position: -webkit-sticky; position: sticky; top: 100px;">
-        <%= render 'layouts/recorder' %>
-        <input type="button" value="データリフレッシュ" class="btn btn-secondary mb-3" onclick="window.location.reload();">
-      </div>
-    </aside>
+  <%= render 'layouts/recorder' %>
 <!--スピーキングここまで-->
     
   </div>
