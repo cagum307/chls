@@ -1,0 +1,362 @@
+
+<div class="center jumbotron text-center">
+  <div class="container">
+    <h1 class="text-white">LESSON 1</h1>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+
+    <div class="col-sm-7 p-3">
+      <h3>Listening!</h3>
+<!--例文1-1-->
+      <div class="p-3">
+        <h5>例文1-1</h5>
+        <div class="p-3">
+          <%= audio_tag 'Sample1-1.m4a' %>
+        </div>
+        <h5 class="mt-4">スクリプト</h5>
+    <style>
+      /*　プレイヤー（再生バー）の高さ、幅、背景色の指定　*/
+      .audiojs { height: 22px; background: #404040; width: 280px;}
+      /*　再生・停止ボタンの高さ、幅、パディングの指定　*/
+      .audiojs .play-pause { width: 25px; height: 20px; padding: 0px 8px 0px 0px; }
+      /*　再生・停止ボタンなどの p 要素　*/
+      .audiojs p { width: 25px; height: 20px; margin: -3px 0px 0px -1px; }
+      /*　進行状態・ロードの状態を表示する部分　*/
+      .audiojs .scrubber { background: #5a5a5a; width: 150px; height: 10px; margin: 5px; }
+      /*　進行状態を表示するバーの部分　*/
+      .audiojs .progress { height: 10px; width: 0px; background: #ccc; }
+      /*　ロード状態を表示するバーの部分　*/
+      .audiojs .loaded { height: 10px; background: #000;}
+      /*　再生時間の部分　*/
+      .audiojs .time { float: left; height: 25px; line-height: 25px; }
+      .audiojs .error-message { height: 24px;line-height: 24px; }
+       /*　再生している曲の情報　*/
+      .track-details { clear: both; height: 20px; width: 280px; padding: 1px 6px; background: #eee; color: #222;  font-size: 11px; line-height: 20px;}
+      .track-details:before { content: '♬  Now Playing: '; }
+    </style>
+          <!-- 表示非表示ボタン -->
+          <input type="button" id="button_sample1-1-ch-s" value="表示" class="btn btn-secondary mb-3" />
+          <input type="button" id="button_sample1-1-ch-h" value="非表示" class="btn btn-secondary mb-3" />
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+          <script>
+          $(function() {
+          	$('#sample1-1-ch').hide();
+          	$("#button_sample1-1-ch-s").click(function() {
+          		$("#sample1-1-ch").show();
+          	});
+          	$("#button_sample1-1-ch-h").click(function() {
+          		$("#sample1-1-ch").hide();
+          	});
+          });
+          </script>
+          <!-- 表示非表示ボタンここまで -->
+          <p class="pl-3" id="sample1-1-ch">研究表明，掌握两种语言的人更擅长解决难题。</p>
+          
+        <h5 class="mt-4">ピンイン</h5>
+          <!-- 表示非表示ボタン -->
+          <input type="button" id="button_sample1-1-py-s" value="表示" class="btn btn-secondary mb-3" />
+          <input type="button" id="button_sample1-1-py-h" value="非表示" class="btn btn-secondary mb-3" />
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+          <script>
+          $(function() {
+          	$('#sample1-1-py').hide();
+          	$("#button_sample1-1-py-s").click(function() {
+          		$("#sample1-1-py").show();
+          	});
+          	$("#button_sample1-1-py-h").click(function() {
+          		$("#sample1-1-py").hide();
+          	});
+          });
+          </script>
+          <!-- 表示非表示ボタンここまで -->
+          <p class="pl-3" id="sample1-1-py">Yán jiū biǎo míng，zhǎng wò liǎng zhǒng yǔ yán de rén gèng	shàn cháng jiě jué nán tí</p>
+          
+        <h5 class="mt-4">翻訳</h5>
+          <!-- 表示非表示ボタン -->
+          <input type="button" id="button_sample1-1-jp-s" value="表示" class="btn btn-secondary mb-3" />
+          <input type="button" id="button_sample1-1-jp-h" value="非表示" class="btn btn-secondary mb-3" />
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+          <script>
+          $(function() {
+          	$('#sample1-1-jp').hide();
+          	$("#button_sample1-1-jp-s").click(function() {
+          		$("#sample1-1-jp").show();
+          	});
+          	$("#button_sample1-1-jp-h").click(function() {
+          		$("#sample1-1-jp").hide();
+          	});
+          });
+          </script>
+          <!-- 表示非表示ボタンここまで -->
+          <p class="pl-3" id="sample1-1-jp">研究では、二つの言語を理解する人は難題の解決により長けていることが示されている。</p>
+      </div>
+      
+
+
+<!--例文1-2-->
+      <div class="p-3">
+        <h5>例文1-2</h5>
+        <div class="p-3">
+          <%= audio_tag 'Sample1-2.m4a' %>
+        </div>
+        <h5 class="mt-4">スクリプト</h5>
+          <!-- 表示非表示ボタン -->
+          <input type="button" id="button_sample1-2-ch-s" value="表示" class="btn btn-secondary mb-3" />
+          <input type="button" id="button_sample1-2-ch-h" value="非表示" class="btn btn-secondary mb-3" />
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+          <script>
+          $(function() {
+          	$('#sample1-2-ch').hide();
+          	$("#button_sample1-2-ch-s").click(function() {
+          		$("#sample1-2-ch").show();
+          	});
+          	$("#button_sample1-2-ch-h").click(function() {
+          		$("#sample1-2-ch").hide();
+          	});
+          });
+          </script>
+          <!-- 表示非表示ボタンここまで -->
+        <p class="pl-3" id="sample1-2-ch">成功学会一门新语言能使大脑更好地执行一些需要智慧的任务。</p>
+        <h5 class="mt-4">翻訳</h5>
+          <!-- 表示非表示ボタン -->
+          <input type="button" id="button_sample1-2-jp-s" value="表示" class="btn btn-secondary mb-3" />
+          <input type="button" id="button_sample1-2-jp-h" value="非表示" class="btn btn-secondary mb-3" />
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+          <script>
+          $(function() {
+          	$('#sample1-2-jp').hide();
+          	$("#button_sample1-2-jp-s").click(function() {
+          		$("#sample1-2-jp").show();
+          	});
+          	$("#button_sample1-2-jp-h").click(function() {
+          		$("#sample1-2-jp").hide();
+          	});
+          });
+          </script>
+          <!-- 表示非表示ボタンここまで -->
+        <p class="pl-3" id="sample1-2-jp">１つの新しい言語の習得に成功すると、知恵を必要とする一部の任務を大脳により良く遂行させることができる。</p>
+      </div>
+      
+
+
+<!--例文1-3-->
+      <div class="p-3">
+        <h5>例文1-3</h5>
+        <div class="p-3">
+          <%= audio_tag 'Sample1-3.m4a' %>
+        </div>
+        <h5 class="mt-4">スクリプト</h5>
+          <!-- 表示非表示ボタン -->
+          <input type="button" id="button_sample1-3-ch-s" value="表示" class="btn btn-secondary mb-3" />
+          <input type="button" id="button_sample1-3-ch-h" value="非表示" class="btn btn-secondary mb-3" />
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+          <script>
+          $(function() {
+          	$('#sample1-3-ch').hide();
+          	$("#button_sample1-3-ch-s").click(function() {
+          		$("#sample1-3-ch").show();
+          	});
+          	$("#button_sample1-3-ch-h").click(function() {
+          		$("#sample1-3-ch").hide();
+          	});
+          });
+          </script>
+          <!-- 表示非表示ボタンここまで -->
+        <p class="pl-3" id="sample1-3-ch">此外，会说至少两种语言还有助于人们更好地集中注意力去处理事情。</p>
+        <h5 class="mt-4">翻訳</h5>
+          <!-- 表示非表示ボタン -->
+          <input type="button" id="button_sample1-3-jp-s" value="表示" class="btn btn-secondary mb-3" />
+          <input type="button" id="button_sample1-3-jp-h" value="非表示" class="btn btn-secondary mb-3" />
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+          <script>
+          $(function() {
+          	$('#sample1-3-jp').hide();
+          	$("#button_sample1-3-jp-s").click(function() {
+          		$("#sample1-3-jp").show();
+          	});
+          	$("#button_sample1-3-jp-h").click(function() {
+          		$("#sample1-3-jp").hide();
+          	});
+          });
+          </script>
+          <!-- 表示非表示ボタンここまで -->
+        <p class="pl-3" id="sample1-3-jp">そのほか、少なくとも2つの言語を話せることは、さらに人々がより良く注意力を集中させてものごとを処理することに役立つ。</p>
+      </div>
+      
+
+
+<!--例文2-1-->
+      <div class="p-3">
+        <h5>例文2-1</h5>
+        <div class="p-3">
+          <%= audio_tag 'Sample2-1.m4a' %>
+        </div>
+        <h5 class="mt-4">スクリプト</h5>
+          <!-- 表示非表示ボタン -->
+          <input type="button" id="button_sample2-1-ch-s" value="表示" class="btn btn-secondary mb-3" />
+          <input type="button" id="button_sample2-1-ch-h" value="非表示" class="btn btn-secondary mb-3" />
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+          <script>
+          $(function() {
+          	$('#sample2-1-ch').hide();
+          	$("#button_sample2-1-ch-s").click(function() {
+          		$("#sample2-1-ch").show();
+          	});
+          	$("#button_sample2-1-ch-h").click(function() {
+          		$("#sample2-1-ch").hide();
+          	});
+          });
+          </script>
+          <!-- 表示非表示ボタンここまで -->
+        <p class="pl-3" id="sample2-1-ch">外食族指的是以在家庭外饮食为主要生活方式的一群人。</p>
+        <h5 class="mt-4">翻訳</h5>
+          <!-- 表示非表示ボタン -->
+          <input type="button" id="button_sample2-1-jp-s" value="表示" class="btn btn-secondary mb-3" />
+          <input type="button" id="button_sample2-1-jp-h" value="非表示" class="btn btn-secondary mb-3" />
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+          <script>
+          $(function() {
+          	$('#sample2-1-jp').hide();
+          	$("#button_sample2-1-jp-s").click(function() {
+          		$("#sample2-1-jp").show();
+          	});
+          	$("#button_sample2-1-jp-h").click(function() {
+          		$("#sample2-1-jp").hide();
+          	});
+          });
+          </script>
+          <!-- 表示非表示ボタンここまで -->
+        <p class="pl-3" id="sample2-1-jp">外食族とは家庭外で飲食することを主要な生活方式とする一群の人々を指す。</p>
+      </div>
+      
+
+
+<!--例文2-2-->
+      <div class="p-3">
+        <h5>例文2-2</h5>
+        <div class="p-3">
+          <%= audio_tag 'Sample2-2.m4a' %>
+        </div>
+        <h5 class="mt-4">スクリプト</h5>
+          <!-- 表示非表示ボタン -->
+          <input type="button" id="button_sample2-2-ch-s" value="表示" class="btn btn-secondary mb-3" />
+          <input type="button" id="button_sample2-2-ch-h" value="非表示" class="btn btn-secondary mb-3" />
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+          <script>
+          $(function() {
+          	$('#sample2-2-ch').hide();
+          	$("#button_sample2-2-ch-s").click(function() {
+          		$("#sample2-2-ch").show();
+          	});
+          	$("#button_sample2-2-ch-h").click(function() {
+          		$("#sample2-2-ch").hide();
+          	});
+          });
+          </script>
+          <!-- 表示非表示ボタンここまで -->
+        <p class="pl-3" id="sample2-2-ch">由于城市生活节奏快，忙绿的白领没时间做饭，儿将饭店当作家庭餐厅。</p>
+        <h5 class="mt-4">翻訳</h5>
+          <!-- 表示非表示ボタン -->
+          <input type="button" id="button_sample2-2-jp-s" value="表示" class="btn btn-secondary mb-3" />
+          <input type="button" id="button_sample2-2-jp-h" value="非表示" class="btn btn-secondary mb-3" />
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+          <script>
+          $(function() {
+          	$('#sample2-2-jp').hide();
+          	$("#button_sample2-2-jp-s").click(function() {
+          		$("#sample2-2-jp").show();
+          	});
+          	$("#button_sample2-2-jp-h").click(function() {
+          		$("#sample2-2-jp").hide();
+          	});
+          });
+          </script>
+          <!-- 表示非表示ボタンここまで -->
+        <p class="pl-3" id="sample2-2-jp">都市生活のテンポが早いために、せわしないホワイトカラーの人たちは食事を作る時間がないので、ホテルをファミリーレストラン代わりにしている。</p>
+      </div>
+      
+
+
+<!--例文2-3-->
+      <div class="p-3">
+        <h5>例文2-3</h5>
+        <div class="p-3">
+          <%= audio_tag 'Sample2-3.m4a' %>
+        </div>
+        <h5 class="mt-4">スクリプト</h5>
+          <!-- 表示非表示ボタン -->
+          <input type="button" id="button_sample2-3-ch-s" value="表示" class="btn btn-secondary mb-3" />
+          <input type="button" id="button_sample2-3-ch-h" value="非表示" class="btn btn-secondary mb-3" />
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+          <script>
+          $(function() {
+          	$('#sample2-3-ch').hide();
+          	$("#button_sample2-3-ch-s").click(function() {
+          		$("#sample2-3-ch").show();
+          	});
+          	$("#button_sample2-3-ch-h").click(function() {
+          		$("#sample2-3-ch").hide();
+          	});
+          });
+          </script>
+          <!-- 表示非表示ボタンここまで -->
+        <p class="pl-3" id="sample2-3-ch">这样既能享受美食又能节省时间，不失为一种高效率的生活方式。</p>
+        <h5 class="mt-4">翻訳</h5>
+          <!-- 表示非表示ボタン -->
+          <input type="button" id="button_sample2-3-jp-s" value="表示" class="btn btn-secondary mb-3" />
+          <input type="button" id="button_sample2-3-jp-h" value="非表示" class="btn btn-secondary mb-3" />
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+          <script>
+          $(function() {
+          	$('#sample2-3-jp').hide();
+          	$("#button_sample2-3-jp-s").click(function() {
+          		$("#sample2-3-jp").show();
+          	});
+          	$("#button_sample2-3-jp-h").click(function() {
+          		$("#sample2-3-jp").hide();
+          	});
+          });
+          </script>
+          <!-- 表示非表示ボタンここまで -->
+        <p class="pl-3" id="sample2-3-jp">そのようにすれば美味しいものを楽しめる上に時間の節約もでき、一種の高効率の生活方式だということができる。</p>
+      </div>
+      
+      
+      <!-- audiojsの初期化 -->
+      <script>
+        audiojs.events.ready(function() {
+          var as = audiojs.createAll();
+        });
+      </script>
+      <!-- audiojsの初期化ここまで -->
+      
+    </div>
+    
+
+
+<!--スピーキング-->
+    <div class="col-sm-5 d-sm-none d-block p-3">
+      <p>PC版では録音、再生機能をお使いいただけます。</p>
+    </div>
+    
+    <aside class="col-sm-5 d-none d-sm-block" style="padding: 10px;">
+      <div style="position: -webkit-sticky; position: sticky; top: 100px;">
+        <%= render 'layouts/recorder' %>
+        <input type="button" value="データリフレッシュ" class="btn btn-secondary mb-3" onclick="window.location.reload();">
+      </div>
+    </aside>
+<!--スピーキングここまで-->
+    
+  </div>
+</div>
+
+
+<div class="text-center m-5">
+  <a href="/" class="text-muted">TOPPAGEへ戻る</a>
+</div>
+
+
+
