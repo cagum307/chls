@@ -9,4 +9,6 @@ Rails.application.routes.draw do
   get 'lesson01s', to: 'lesson01s#index'
   get 'lesson02s', to: 'lesson02s#index'
   
+  resources :inquiries, only: [:new, :create]
+  
 end
